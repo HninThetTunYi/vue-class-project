@@ -1,7 +1,7 @@
 
 
 <template>
-<nav class="navbar navbar-expand-sm bg-green">
+<nav class="navbar navbar-expand-md bg-green">
   <div class="container">
     <a class="navbar-brand" href="/"> LearnDash </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -18,14 +18,9 @@
         <li class="nav-item">
             <router-link class="nav-link" to="/CourseList"> Courses</router-link>
         </li>  
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Link</a></li>
-            <li><a class="dropdown-item" href="#">Another link</a></li>
-            <li><a class="dropdown-item" href="#">A third link</a></li>
-          </ul>
-        </li>
+        <li class="nav-item">
+            <router-link class="nav-link" to="/Admin"> Admin </router-link>
+        </li>  
       </ul>
     </div>
   </div>

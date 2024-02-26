@@ -47,7 +47,7 @@ export default {
 <style>
 
 .course-cat {
-  background: linear-gradient(to bottom, rgb(240, 154, 154), rgb(236, 177, 88));
+  background: linear-gradient(to bottom, rgb(255, 184, 184), rgb(255, 220, 169));
   padding: 3em 0;
 
 }
@@ -67,6 +67,7 @@ export default {
   width: 250px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   min-height: 335px;
+  background-color: #ffecec;
 }
 
 .photo-card img {
