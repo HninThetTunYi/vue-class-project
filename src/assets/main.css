@@ -1,0 +1,40 @@
+@import '/node_modules/tailwindcss/base.css';
+@import '/node_modules/tailwindcss/components';
+@import '/node_modules/tailwindcss/utilities';
+
+@import '../assets/font.css';
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    font-family: "PoppinsRegular", sans-serif;
+    width: 100%;
+    color: #172554;
+    background-color: rgb(207, 207, 207);
+    font-size: 16px;
+  }
+
+
+
+  h1,h2,h3 {
+    font-family: "Bold", sans-serif;
+  }
+
+@media (min-width: 576px) {
+  .navbar-expand-sm .navbar-collapse {
+      display: flex!important;
+      flex-basis: inherit;
+      justify-content: flex-end;
+  }
+}
+
+  

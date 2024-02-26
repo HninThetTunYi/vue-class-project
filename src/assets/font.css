@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'PoppinsRegular';
+    src: url('../assets/fonts/Poppins-Regular.ttf') format('truetype') /* Modern Browsers */
+    /* Optionally specify font-weight and font-style here */
+  }
+  
+  
+@font-face {
+    font-family: 'Medium';
+    src: url('../assets/fonts/Poppins-Medium.ttf') format('truetype') /* Modern Browsers */
+  }
+
+  @font-face {
+    font-family: 'Bold';
+    src: url('../assets/fonts/Poppins-Bold.ttf') format('truetype') /* Modern Browsers */
+  }
