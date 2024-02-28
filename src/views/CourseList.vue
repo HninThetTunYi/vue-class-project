@@ -1,5 +1,5 @@
 <template>
-    <div class="course-list-pg">     
+    <div class="course-list-pg main-content">     
 
       <div class="course-list-div mb-5">
 
@@ -74,13 +74,13 @@ export default {
 <style scoped>
 
 .course-list-div {
-  background-color: rgb(225, 225, 225);
+  background-color: rgb(255, 255, 255);
   padding: 2em 0;
 }
 
 .course-list-div ul {
   margin-top: 2em 0;
-  background-color: rgb(236, 180, 110);
+  background-color: rgb(255, 228, 195);
   border-radius: 5px;
   padding: 30px;
   
@@ -89,7 +89,7 @@ export default {
 .course-list-div ul li {
   padding: 5px 0;
   margin: 5px 0;
-  border-bottom:  1px solid #d4d4d4;
+  border-bottom:  1px solid #9c9c9c;
   display: flex;
   justify-content: space-between;
   align-items: center;

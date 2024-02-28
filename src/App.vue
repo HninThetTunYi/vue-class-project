@@ -37,19 +37,22 @@ export default {
 
   <welcomeCourse v-if="isHomePage"> </welcomeCourse>
 
-  <WelcomeUrban v-if="isHomePage"> </WelcomeUrban>
-
   <CategoryCard v-if="isHomePage"> </CategoryCard>
- 
+
+  <WelcomeUrban v-if="isHomePage"> </WelcomeUrban>
  
 
-  <section  class="">
+  <section>
 
     <RouterView></RouterView>
 
     
 
   </section>
+
+  <div class="p-4 bg-dark text-white text-center">
+    <h5>2024 © LearnDash. All Rights Reserved.</h5>
+  </div>
     
 </template>
 

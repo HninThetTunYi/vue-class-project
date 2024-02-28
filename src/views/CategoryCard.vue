@@ -5,7 +5,7 @@
     <div class="photo-container">
       <div v-for="photo in photos" :key="photo.id" class="photo-card">
         <img :src="photo.url" :alt="photo.title" />
-        <p>{{ photo.title }}</p>
+        <p class="clamped">{{ photo.title }}</p>
       </div>
     </div>
   </div>
@@ -64,10 +64,10 @@ export default {
   border: 1px solid #cfcfcf;
   border-radius: 5px;
   padding: 10px;
-  width: 250px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   min-height: 335px;
   background-color: #ffecec;
+  width: 24%;
 }
 
 .photo-card img {
@@ -81,6 +81,41 @@ export default {
   font-size: 1rem;
   text-align: center;
   font-family: 'Medium', sans-serif;
+}
+
+/* For modern browsers */
+.clamped {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Adjust the number to limit the lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* For older browsers */
+.clamped {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Adjust the number to limit the lines */
+  -webkit-box-orient: vertical;
+  max-height: 2 * 1.2em; /* Adjust the number to limit the lines */
+  overflow: hidden;
+}
+
+
+/* For screens smaller than 768px (typical for smartphones) */
+@media (max-width: 767px) {
+    .photo-card {
+        width: 50%;
+    }
+    .photo-container {
+        flex-wrap: wrap;
+    }
+}
+
+/* For screens smaller than 768px (typical for smartphones) */
+@media (max-width: 576px) {
+    .photo-card {
+        width: 100%;
+    }
 }
 </style>
 

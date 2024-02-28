@@ -84,42 +84,42 @@ export default {
     <!-- <FormInput ref="formInput" @submitInput="getDefinition" /> -->
     
 
-  <div class="p-5 bg-warning my-3 search-box">
-    <h3> Explore the full dictionary </h3>
+  <div class="p-5 bg-warning search-box">
+    <div class="container">
+      <h3> Explore the full dictionary </h3>
       <div class="col-12">
-        <div class="input-group">
-          
+        <div class="input-group">          
           <input v-model="term" class="form-control" placeholder="Enter a term">
-
           <span class="input-group-btn">
             <button @click="search"  class="btn btn-primary">Search</button>
           </span>
-
         </div>
       </div>
+    </div>
 </div>
 
+<div class="container py-3 definition-list">
 
-    <p v-if="loading">Loading ...</p>
 
-    <p v-if="!loading && definitions.length === 0"> No definitions found for "{{ term }}" </p>
+    <p v-if="loading">Loading ...</p>  
     
 
     <ul v-if="!loading && definitions.length>0">
       <!-- <Card v-for="(data,index) in definition" :key="index" :definition="data" /> -->
       <li v-for="definition in definitions" :key="definition.defId">
-        <h3 className="font-bold"> {{ definition.word }} </h3>
+        <h4 className="font-bold"> {{ definition.word }} </h4>
         {{ definition.definition }} <br/>
         <h5 class="underline">  {{ definition.author }} </h5>
         
       </li>
     </ul>
 
-    <div class="float-right text-right">
-        <router-link to="/" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
-          
-          <button class="btn btn-primary"> Back </button>
+    <div class="d-flex justify-content-end w-100">
+        <router-link to="/" class="btn btn-primary">          
+        Back to Home 
         </router-link>
+    </div>
+
     </div>
 
  
@@ -133,11 +133,11 @@ export default {
 }
 
 ul {
-  padding: 1em 0;
+  padding: 0.5em 0;
   display: flex;
   flex-wrap: wrap;
-  background-color: cadetblue;
   border-radius: 5px;
+  list-style: none;
 }
 
 li {
@@ -148,6 +148,10 @@ li {
     border: 1px solid #fff;
     border-radius: 5px;
   margin: 8px;
+}
+
+.definition-list h4 {
+  text-transform: capitalize;
 }
 </style>
 

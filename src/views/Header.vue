@@ -4,23 +4,21 @@
 <nav class="navbar navbar-expand-md bg-green">
   <div class="container">
     <a class="navbar-brand" href="/"> LearnDash </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Teacher</a>
+          <a class="nav-link" href="/TeacherList">Teacher</a>
         </li>
         <li class="nav-item">
             <router-link class="nav-link" to="/CourseList"> Courses</router-link>
-        </li>  
-        <li class="nav-item">
-            <router-link class="nav-link" to="/Admin"> Admin </router-link>
-        </li>  
+        </li> 
       </ul>
     </div>
   </div>
@@ -29,10 +27,7 @@
 
 <script>
 export default {
-  data() {
-    return {
-    };
-  }
+  name: 'Navbar',
 };
 </script>
 
